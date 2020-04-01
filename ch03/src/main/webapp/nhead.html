@@ -36,16 +36,82 @@ border: 3px solid #03CF5D;
 	display: block;
 	float: left;
 }
+
+.search-box a.keyboard {
+	b!order:1px solid #333;
+	width:25px;
+	height:20px;
+	background: url('images/sp_search.svg') no-repeat -30px -55px;
+	text-indent:110%;
+	overflow: hidden;
+	margin-top : 15px;
+}
+
+.search-box a.dropdown {
+	width:15px;
+	height:20px;
+	background: url('images/sp_search.svg') no-repeat -85px -55px;
+	text-indent:110%;
+	overflow: hidden;
+	margin-top : 18px;
+	
+	
+}
+
+.search-box input:focus{
+	outline: none;
+}
+
+.search-box input {
+	outline-style:hidden;
+	border:0px;
+	width:300px;
+	outline-color: white;
+	font-size : 25px;
+	margin: 8px 0 0 8px;
+}
+
+.scope{
+	border:0px;
+	outline: none;
+	width:50px;
+	height:50px;
+	ba!ckground: url('images/sp_search.svg') no-repeat 10px -45px;
+	text-indent:110%;
+	
+	overflow: hidden;	
+	background-color: #03CF5D;
+	padding-left : 2px;
+}
+
+.scope button{
+	border:0px;
+	width:30px;
+	height:30px;
+	font-size:100px;
+	text-indent:110%;	
+	overflow: hidden;	
+	background: url('images/sp_search.svg') no-repeat 1px -55px;
+	margin : 10px;
+}
+
+.scope button:focus{
+	outline:none;
+}
+
 </style>
 </head>
 <body>
 	<div class='header'>
 		<h1 class='logo'>네이버</h1>
 		<div class='search-box'>
-			<input type='text' />
+			<input type='text'/>
 			<a href='#' class='keyboard'>키보드</a>
 			<a href='#' class='dropdown'>드롭다운</a>
-			<button class= 'glasses'>돋보기</button>
+			<div class='scope'>
+				<button>돋보기</button>
+			</div>
+			
 		</div>
 	</div>
 </body>
