@@ -72,6 +72,7 @@ window.addEventListener('load', function(){
 	var liTabs = ulTabBox.getElementsByTagName('li');
 	
 	for(var i=0; i<liTabs.length; i++ ){
+		console.log(document.getElementsByClassName('tab-box')[0]);
 		liTabs[i].addEventListener('click', OnTabClicked);
 	}
 });
