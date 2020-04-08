@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>element만들기</title>
+<script>
+window.addEventListener("load", function(){
+	var h1Element = document.createElement('h1');
+	var textNode = document.createTextNode('Hello Dom');
+	
+	h1Element.append(textNode);
+	
+	setTimeout(function(){	
+	document.body.appendChild(h1Element);
+	h1Element.createElement('em');	
+	},2000);
+});
+</script>
+</head>
+<body>
+	<h1>HTMLElement 만들기 01</h1>
+</body>
+</html>
