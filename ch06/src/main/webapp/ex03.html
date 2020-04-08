@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var s = "";
+for(property in location){
+	s += (property + ":" + location[property] + "\n");
+}
+console.log(s);
+
+</script>
+</head>
+<body>
+	<h1>BOM(Browser Object Model)</h1>
+	<h2>3. location 객체(주소창)</h2>
+	<h3>page redirection</h3>
+	<h3>Refresh page 하는 방법</h3>
+	<button onclick="location.href='http://www.douzone.com';">douzone home</button>
+	
+	<!-- 방법1 -->
+	<button onclick="location = location;">refresh1</button>
+	
+	<!-- 방법2 -->
+	<button onclick="location.href=location.href">refresh2</button>
+	
+	<!-- 방법3 -->
+	<button onclick="location.assign('');">refresh3</button>
+	
+	<!-- 방법4 -->
+	<button onclick="location.replace(location);">refresh4</button>
+	
+	<!-- 방법5 -->
+	<button onclick="location.reload();">refresh5</button>
+</body>
+</html>
